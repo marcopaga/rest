@@ -16,6 +16,7 @@
     <modules>
         <module>api</module>
         <module>server</module>
+        <module>ribbon-client</module>
     </modules>
 
 </project>

@@ -2,7 +2,10 @@ package de.codecentric.rest.api;
 
 public class Input {
 
-    private final String name;
+    private String name;
+
+    public Input(){
+    }
 
     public Input(String name) {
         this.name = name;
@@ -11,4 +14,6 @@ public class Input {
     public String getName() {
         return name;
     }
+
+    private void setName(final String name) {this.name = name; }
 }

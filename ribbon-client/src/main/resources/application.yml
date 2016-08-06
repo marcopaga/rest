@@ -1,0 +1,6 @@
+greeting-service:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:8080,localhost:8090
+    ServerListRefreshInterval: 15000

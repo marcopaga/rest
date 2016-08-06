@@ -2,14 +2,28 @@ package de.codecentric.rest.api;
 
 public class Greeting {
 
-    private final String greeting;
+    private String greeting;
+
+
+    public Greeting() {
+    }
 
     public Greeting(String greeting) {
-        this.greeting = greeting;
+        setGreeting(greeting);
     }
 
     public String getGreeting() {
         return greeting;
     }
 
+    public void setGreeting(String greeting) {
+        this.greeting = greeting;
+    }
+
+    @Override
+    public String toString() {
+        return "Greeting{" +
+                "greeting='" + greeting + '\'' +
+                '}';
+    }
 }
